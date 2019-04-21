@@ -1,0 +1,130 @@
+/* SHARED STYLES */
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  background-color: lightpink;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 60%; /* spec */
+  margin: 2rem 1.5rem; /* spec */
+  background-color: lightgreen;
+}
+
+.right {
+  width: 40%; /* spec */
+  margin: 2rem 0; /* spec */
+  padding-left: 1rem; /* spec */
+  background-color: lightblue;
+}
+
+.left img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 1: HEADER */
+
+header {
+  justify-content: space-between;
+  height: 64px; /* spec */
+}
+
+/* 1a. business id */
+
+.business-id {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem; /* spec */
+}
+
+.business-id span {
+  font-size: 2rem; /* spec */
+}
+
+.business-id img {
+  height: 3rem;
+}
+
+/* 1b. navigation menu */
+
+nav {
+  margin: auto 1.5rem; /* spec */
+}
+
+nav span {
+  font-size: 1.5rem;
+  padding-left: 1rem; /* spec */
+}
+
+/* 2. BANNER */
+
+/* 2a. left side, containing image */
+
+/* 2b. right side, containing call to action */
+
+.banner .right {
+  justify-content: center;
+}
+
+.banner .right * {
+  margin: 1rem 0;
+}
+
+/* 3. INFORMATION */
+
+/* 3a. left side, containing image and quote */
+
+.information h2 {
+  margin: 2rem 0 1.5rem 0; /* spec */
+}
+
+.information .left span {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* 3b. right side, containing upcoming events */
+
+.event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.event img {
+  width: 35%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
