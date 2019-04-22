@@ -26,7 +26,6 @@ html {
 .right {
   width: 40%; /* spec */
   margin: 2rem 0; /* spec */
-  padding-left: 1rem; /* spec */
   background-color: lightblue;
 }
 
@@ -47,6 +46,13 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%; /* spec */
 }
 
 /* 1: HEADER */
@@ -95,6 +101,7 @@ nav span {
 
 .banner .right * {
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 /* 3. INFORMATION */
@@ -106,25 +113,64 @@ nav span {
 }
 
 .information .left span {
-  margin-top: 2rem;
+  margin: 2rem 0;
   font-weight: bold;
 }
 
 /* 3b. right side, containing upcoming events */
 
-.event {
+.info-box {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  padding: 1rem; /* spec */
+  background-color: lightyellow;
 }
 
-.event img {
-  width: 35%;
+.info-box:first-child {
+  padding-top: 0;
 }
 
-.details {
+.info-box img {
+  width: 35%; /* spec */
+  margin-right: 1rem; /* spec */
+}
+
+.details * {
+  margin-bottom: 0.5rem; /* spec */
+}
+
+/* 4. COURSES */
+
+.courses {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem; /* spec */
+}
+
+.row-of-courses {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; /* spec */
+}
+
+.course: {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 65%;
+}
+
+.course:first-child {
+  padding: 0 2rem 0 4.5rem; /* spec */
+}
+
+.course:last-child {
+  padding: 0 4.5rem 0 2rem; /* spec */
+}
+
+.course img {
+  max-width: 100%;
+}
+
+.course .details {
+  width: 100%;
+  padding: 1rem 0 1.5rem 1rem; /* spec */
 }
