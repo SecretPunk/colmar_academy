@@ -5,13 +5,14 @@ html {
   font-family: Helvetica, sans-serif;
 }
 
+/* site container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  background-color: lightpink;
 }
 
+/* most sections of the page contain two columns, left and right */
 .column {
   display: flex;
   flex-direction: column;
@@ -19,16 +20,15 @@ html {
 
 .left {
   width: 60%; /* spec */
-  margin: 2rem 1.5rem; /* spec */
-  background-color: lightgreen;
+  padding: 2rem 1.5rem; /* spec */
 }
 
 .right {
   width: 40%; /* spec */
-  margin: 2rem 0; /* spec */
-  background-color: lightblue;
+  padding: 2rem 0; /* spec */
 }
 
+/* two sections contain a large image in the left column */
 .left img {
   width: 100%;
 }
@@ -48,6 +48,14 @@ h3 {
   font-weight: bold;
 }
 
+/* two sections comprise multiple boxes containing images and details */
+.info-box {
+  display: flex;
+  align-items: center;
+  padding: 1rem; /* spec */
+  background-color: lightgrey;
+}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -55,14 +63,20 @@ h3 {
   width: 65%; /* spec */
 }
 
-/* 1: HEADER */
+.details * {
+  margin-bottom: 0.5rem; /* spec */
+  padding: 0 1rem; /* spec */
+}
+
+/* HEADER */
 
 header {
   justify-content: space-between;
   height: 64px; /* spec */
+  background-color: lightpink;
 }
 
-/* 1a. business id */
+/* HEADER - business id */
 
 .business-id {
   display: flex;
@@ -78,7 +92,7 @@ header {
   height: 3rem;
 }
 
-/* 1b. navigation menu */
+/* HEADER - navigation menu */
 
 nav {
   margin: auto 1.5rem; /* spec */
@@ -89,11 +103,11 @@ nav span {
   padding-left: 1rem; /* spec */
 }
 
-/* 2. BANNER */
+/* BANNER - right side, containing call to action */
 
-/* 2a. left side, containing image */
-
-/* 2b. right side, containing call to action */
+.banner {
+  background-color: lightblue;
+}
 
 .banner .right {
   justify-content: center;
@@ -104,47 +118,38 @@ nav span {
   padding: 0 1rem;
 }
 
-/* 3. INFORMATION */
+/* INFORMATION - left side, containing image and quote */
 
-/* 3a. left side, containing image and quote */
+.information {
+  background-color: lightpink;
+}
 
 .information h2 {
   margin: 2rem 0 1.5rem 0; /* spec */
 }
 
 .information .left span {
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
-/* 3b. right side, containing upcoming events */
+/* INFORMATION - right side, containing upcoming events */
 
-.info-box {
-  display: flex;
-  align-items: center;
-  padding: 1rem; /* spec */
-  background-color: lightyellow;
-}
-
-.info-box:first-child {
+.information .info-box:first-child {
   padding-top: 0;
 }
 
 .info-box img {
   width: 35%; /* spec */
-  margin-right: 1rem; /* spec */
 }
 
-.details * {
-  margin-bottom: 0.5rem; /* spec */
-}
-
-/* 4. COURSES */
+/* COURSES */
 
 .courses {
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem; /* spec */
+  padding: 2rem 0; /* spec */
+  background-color: lightblue;
 }
 
 .row-of-courses {
@@ -155,14 +160,15 @@ nav span {
 
 .course {
   width: 100%;
+  background-color: lightgrey;
 }
 
 .course:first-child {
-  padding: 0 2rem 0 4.5rem; /* spec */
+  margin: 0 2rem 0 4.5rem; /* spec */
 }
 
 .course:last-child {
-  padding: 0 4.5rem 0 2rem; /* spec */
+  margin: 0 4.5rem 0 2rem; /* spec */
 }
 
 .course img {
@@ -171,5 +177,42 @@ nav span {
 
 .course .details {
   width: 100%;
-  padding: 1rem 0 1.5rem 1rem; /* spec */
+  padding: 1rem 0 1.5rem 0; /* spec */
+}
+
+/* THESIS EXHIBIT */
+
+.thesis {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem; /* spec */
+  background-color: lightpink;
+}
+
+.thesis-columns {
+  display: flex;
+  align-items: flex-start;
+}
+
+video {
+  margin-top: -1rem;
+}
+
+.thesis .left h3 {
+  margin: 1.5rem 0 0.5rem 0; /* spec */
+}
+
+/* FOOTER */
+
+footer {
+  justify-content: space-between;
+  background-color: lightblue;
+}
+
+footer p, .footer-menu {
+  padding: 1rem 1.5rem; /* spec */
+}
+
+footer span {
+  margin-left: 0.5rem;
 }
