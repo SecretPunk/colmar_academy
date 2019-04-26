@@ -3,6 +3,7 @@
 html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
+  background-color: rgba(126, 126, 209, 0.3);
 }
 
 /* site container */
@@ -53,7 +54,6 @@ h3 {
   display: flex;
   align-items: center;
   padding: 1rem; /* spec */
-  background-color: lightgrey;
 }
 
 .details {
@@ -68,12 +68,19 @@ h3 {
   padding: 0 1rem; /* spec */
 }
 
+/* common flourishes */
+
+img {
+  border-radius: 6px;
+}
+
 /* HEADER */
 
 header {
   justify-content: space-between;
   height: 64px; /* spec */
-  background-color: lightpink;
+  background-color: rgba(255, 204, 52, 0.8);
+  color: rgb(32, 32, 150);
 }
 
 /* HEADER - business id */
@@ -106,7 +113,7 @@ nav span {
 /* BANNER - right side, containing call to action */
 
 .banner {
-  background-color: lightblue;
+  background-color: rgba(86, 86, 185, 0.3);
 }
 
 .banner .right {
@@ -121,7 +128,7 @@ nav span {
 /* INFORMATION - left side, containing image and quote */
 
 .information {
-  background-color: lightpink;
+  background-color: rgba(255, 204, 52, 0.6);
 }
 
 .information h2 {
@@ -149,7 +156,7 @@ nav span {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0; /* spec */
-  background-color: lightblue;
+  background-color: rgba(86, 86, 185, 0.3);
 }
 
 .row-of-courses {
@@ -160,7 +167,6 @@ nav span {
 
 .course {
   width: 100%;
-  background-color: lightgrey;
 }
 
 .course:first-child {
@@ -186,16 +192,17 @@ nav span {
   flex-direction: column;
   align-items: center;
   padding-top: 2rem; /* spec */
-  background-color: lightpink;
+  background-color: rgba(255, 204, 52, 0.6);
 }
 
 .thesis-columns {
   display: flex;
-  align-items: flex-start;
 }
 
 video {
-  margin-top: -1rem;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
 }
 
 .thesis .left h3 {
@@ -206,7 +213,7 @@ video {
 
 footer {
   justify-content: space-between;
-  background-color: lightblue;
+  background-color: rgba(86, 86, 185, 0.3);
 }
 
 footer p, .footer-menu {
