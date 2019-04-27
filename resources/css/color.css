@@ -1,0 +1,49 @@
+/* color palette */
+
+.blue1 {
+  color: rgb(32, 32, 150);
+}
+
+.blue2 {
+  color: rgb(86, 86, 185);
+}
+
+.blue3 {
+  color: rgb(126, 126, 209);
+}
+
+.back-blue1 {
+  background-color: rgb(126, 126, 209);
+}
+
+.back-blue2 {
+  background-color: rgba(126, 126, 209, 0.4);
+}
+
+.back-blue3 {
+  background-color: rgba(126, 126, 209, 0.2);
+}
+
+.yellow1 {
+  color: rgb(204, 153, 0);
+}
+
+.yellow2 {
+  color: rgb(255, 191, 0);
+}
+
+.yellow3 {
+  color: rgb(255, 204, 52);
+}
+
+.back-yellow1 {
+  background-color: rgb(255, 204, 52);
+}
+
+.light-text {
+  color: rgb(220, 220, 255);
+}
+
+.dark-text {
+  color: rgb(30, 40, 80);
+}
