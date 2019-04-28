@@ -53,6 +53,7 @@ h3 {
   display: flex;
   align-items: center;
   padding: 1rem; /* spec */
+  border-radius: 6px;
 }
 
 .details {
@@ -99,6 +100,10 @@ header {
   height: 3rem;
 }
 
+.business-id .dark-text {
+  font-weight: bold;
+}
+
 /* HEADER - navigation menu */
 
 nav {
@@ -120,9 +125,22 @@ nav span {
   justify-content: center;
 }
 
-.banner .right * {
-  margin: 1rem 0;
-  padding: 0 1rem;
+.banner .right h1, .banner .right h3 {
+  margin: 1rem 7rem 1rem 0;
+  padding-left: 1rem;
+}
+
+.button {
+  margin: 1rem 7rem 1rem 1rem;
+  height: 2rem; /* spec */
+  border-radius: 6px;
+}
+
+.button p {
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* INFORMATION - left side, containing image and quote */
@@ -146,6 +164,10 @@ nav span {
   width: 35%; /* spec */
 }
 
+.info-box span {
+  font-weight: bold;
+}
+
 /* COURSES */
 
 .courses {
@@ -162,6 +184,7 @@ nav span {
 
 .course {
   width: 100%;
+  border-radius: 6px;
 }
 
 .course:first-child {
@@ -174,6 +197,7 @@ nav span {
 
 .course img {
   width: 100%;
+  border-radius: 6px 6px 0 0;
 }
 
 .course .details {
