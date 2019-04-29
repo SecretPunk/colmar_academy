@@ -1,9 +1,6 @@
 /* SHARED STYLES */
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i|Varela+Round');
-@import url('https://fonts.googleapis.com/css?family=Aclonica|Convergence|Harmattan|Mandali|NTR');
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,500,600,700,800,900|Mukta+Malar:400,500,600,700,800|Telex');
-@import url('https://fonts.googleapis.com/css?family=Carme|Imprima|Martel+Sans:400,600,700,800,900|Padauk:400,700');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:500|NTR|Varela+Round');
 
 html {
   font-size: 16px;

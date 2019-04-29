@@ -1,12 +1,20 @@
-/* color palette */
+/* COLOUR PALETTE */
 
-.blue2 {
-  color: rgb(86, 86, 185); /* not used */
+/* text */
+
+.light-text {
+  color: rgb(220, 220, 255);
 }
 
-.blue3 {
-  color: rgb(126, 126, 209); /* not used */
+.dark-text {
+  color: rgb(25, 25, 100);
 }
+
+.yellow-text {
+  color: rgb(255, 204, 52);
+}
+
+/* backgrounds */
 
 .back-blue1 {
   background-color: rgb(100, 100, 209);
@@ -24,26 +32,16 @@
   background-color: rgba(100, 100, 209, 0.2);
 }
 
-.yellow1 {
-  color: rgb(204, 153, 0); /* not used */
-}
-
-.yellow2 {
-  color: rgb(255, 191, 0); /* not used */
-}
-
-.yellow3 {
-  color: rgb(255, 204, 52);
-}
-
 .back-yellow1 {
   background-color: rgba(255, 204, 52, 0.9);
 }
 
-.light-text {
-  color: rgb(220, 220, 255);
+/* borders */
+
+.bottom-border {
+  border-bottom: 2px solid rgb(255, 204, 52);
 }
 
-.dark-text {
-  color: rgb(25, 25, 100);
+.top-border {
+  border-top: 2px solid rgb(255, 204, 52);
 }
