@@ -1,14 +1,37 @@
+/* DYNAMIC EFFECTS */
+
+/* navigation items */
 nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 204, 52);
+  border-bottom: solid 2px rgb(255, 204, 52);
   color: rgb(25, 25, 100);
 }
 
+/* CTA button */
 .button:hover {
   background-color: rgb(255, 210, 40);
 }
 
+/* CTA button - 'pressed-down' effect */
 .button:active {
-  box-shadow: 0 3px rgba(100, 100, 209, 0.4);
+  box-shadow: 0 3px rgba(100, 100, 209, 0.7);
   transform: translateY(3px);
+}
+
+/* anchors in information, thesis and footer sections */
+.information a:hover, .thesis a:hover, footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(50, 50, 209);
+  color: rgb(50, 50, 209);
+  font-weight: bold;
+}
+
+/* courses */
+.course:hover {
+  opacity: 0.7;
+}
+
+/* courses - button effect */
+.course:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px rgba(100, 100, 209, 0.7);
 }

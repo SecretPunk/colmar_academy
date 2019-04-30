@@ -133,8 +133,8 @@ nav {
 nav a {
   font-family: "NTR", sans-serif;
   font-size: 1.5rem;
-  padding-left: 1rem; /* spec */
-  transition: all 0.2s;
+  margin-left: 1rem; /* spec */
+  transition: all 0.1s ease-in;
 }
 
 /* BANNER - right side, containing call to action */
@@ -156,7 +156,7 @@ nav a {
   margin: 1rem 5rem 1rem 1rem;
   height: 2rem; /* spec */
   border-radius: 6px;
-  box-shadow: 0 5px rgba(100, 100, 209, 0.4);
+  box-shadow: 0 5px rgba(100, 100, 209, 0.7);
   transition: all 0.1s ease;
 }
 
@@ -188,8 +188,9 @@ nav a {
   width: 35%; /* spec */
 }
 
-.info-box span {
+.information a {
   font-weight: bold;
+  transition: all 75ms ease-in;
 }
 
 /* COURSES */
@@ -209,6 +210,8 @@ nav a {
 .course {
   width: 100%;
   border-radius: 6px;
+  box-shadow: 0 5px rgba(100, 100, 209, 0.7);
+  transition: all 0.1s ease;
 }
 
 .course:first-child {
@@ -251,6 +254,10 @@ video {
   margin: 1.5rem 0 0.5rem 0; /* spec */
 }
 
+.thesis a {
+  transition: all 75ms ease;
+}
+
 /* FOOTER */
 
 footer {
@@ -263,6 +270,7 @@ footer p, .footer-menu {
   padding: 1rem 1.5rem; /* spec */
 }
 
-footer span {
+footer a {
   margin-left: 0.5rem;
+  transition: all 75ms ease;
 }
