@@ -207,6 +207,10 @@ nav a {
   margin-top: 2rem; /* spec */
 }
 
+.middle {
+  display: none;
+}
+
 .course {
   width: 100%;
   border-radius: 6px;

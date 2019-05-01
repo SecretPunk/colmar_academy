@@ -7,6 +7,7 @@
     <link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="resources/css/color.css" rel="stylesheet" type="text/css"/>
     <link href="resources/css/effects.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/css/media_queries.css" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
     <script> </script> <!-- this fixes a Chrome bug that fires transitions upon page load -->
     <title>Learn Something New Everyday</title>
@@ -102,7 +103,7 @@
               Effects, Computer Animation</p>
           </div>
         </a>
-        <a class="course back-yellow1" href="#">
+        <a class="course back-yellow1 remove" href="#">
           <img src="resources/images/course-design.jpg" alt="design" />
           <div class="details">
             <h3>Design</h3>
@@ -112,9 +113,29 @@
         </a>
       </div>
 
+      <!-- middle row, added when screen is reduced to a middle width -->
+      <div class="row-of-courses middle">
+        <a class="course back-blue3" href="#">
+          <img src="resources/images/course-design.jpg" alt="design" />
+          <div class="details">
+            <h3>Design</h3>
+            <p>COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </a>
+        <a class="course back-yellow1" href="#">
+          <img src="resources/images/course-data.jpg" alt="data" />
+          <div class="details">
+            <h3>Data</h3>
+            <p>COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualisation</p>
+          </div>
+        </a>
+      </div>
+
       <!-- second row of courses -->
       <div class="row-of-courses">
-        <a class="course back-blue3" href="#">
+        <a class="course back-blue3 remove" href="#">
           <img src="resources/images/course-data.jpg" alt="data" />
           <div class="details">
             <h3>Data</h3>

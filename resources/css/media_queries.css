@@ -1,0 +1,80 @@
+/* MEDIA QUERIES */
+
+/* breakpoint where the rounded info-box corners look strange against
+the edge of the browser window. This point is the container width (1200px) plus
+the left-side padding (24px) */
+@media only screen and (max-width: 1224px) {
+
+  .info-box {
+    border-radius: 0;
+  }
+}
+
+/* breakpoint where 'guest lecture' details become taller than accompanying image */
+@media only screen and (max-width: 1008px) {
+
+  .left {
+    width: 55%;
+  }
+
+  .right {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* breakpoint where navigation menu splits into a second line, and course
+boxes start looking too narrow */
+@media only screen and (max-width: 884px) {
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .business-id span {
+    display: none;
+  }
+
+  .banner .right h1, .banner .right h3, .button {
+    margin-right: 2rem;
+  }
+
+  .remove {
+    display: none;
+  }
+
+  .course:nth-child(2n) {
+    margin: 0 2rem;
+  }
+
+  .course:first-child {
+    margin: 0 0 0 2rem;
+  }
+
+  .course:last-child {
+    margin: 0 2rem 0 0 ;
+  }
+
+  .middle {
+    display: flex;
+  }
+
+  .middle .course {
+    margin-right: 2rem;
+  }
+}
