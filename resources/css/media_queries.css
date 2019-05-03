@@ -147,6 +147,10 @@ narrow, and the large feature images look awkwardly small and lack impact. */
     height: 3rem;
   }
 
+  header .mobile a:hover {
+    border-bottom: solid 2px rgb(255, 204, 52);
+  }
+
   /* banner */
 
   .banner {
@@ -190,7 +194,7 @@ narrow, and the large feature images look awkwardly small and lack impact. */
   }
 
   .info-box:last-child {
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; /* spec */
   }
 
   .information .mobile {
@@ -217,4 +221,59 @@ narrow, and the large feature images look awkwardly small and lack impact. */
     display: none;
   }
 
+  .courses h2 {
+    padding-bottom: 1rem; /* spec */
+  }
+
+  .courses .mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .courses h3 {
+    padding: 1rem 0 1.5rem 1rem; /* spec */
+    margin: 0 1rem 0.8125rem 1rem; /* 0.8125rem = 13px = 5px shadow + 8px margin */
+    border-radius: 6px;
+    box-shadow: 0 5px rgba(100, 100, 209, 0.7);
+  }
+
+  .last {
+    margin-bottom: 0;
+  }
+
+  .courses h3:hover {
+    opacity: 0.7;
+  }
+
+  .courses h3:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px rgba(100, 100, 209, 0.7);
+  }
+
+  /* thesis */
+
+  .thesis .right, .thesis h3, .thesis p {
+    display: none;
+  }
+
+  .thesis .left {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .thesis h2 {
+    padding-bottom: 1rem; /* spec */
+  }
+
+  video {
+    margin-bottom: 1.5rem; /* spec */
+    border-radius: 0;
+  }
+
+  /* footer */
+
+  .footer-menu {
+    display: none;
+  }
 }
