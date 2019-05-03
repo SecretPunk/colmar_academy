@@ -18,6 +18,11 @@ html {
   display: flex;
 }
 
+/* mobile-only sections */
+.mobile {
+  display: none;
+}
+
 /* left and right columns */
 
 .column {

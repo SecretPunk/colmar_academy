@@ -78,3 +78,143 @@ boxes start looking too narrow */
     margin-right: 2rem;
   }
 }
+
+/* breakpoint where banner text becomes too tall and narrow, and won't centre
+on the vertical axis. */
+@media only screen and (max-width: 778px) {
+
+  .banner .right h1, .banner .right h3 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  .button {
+    margin-top: 0.5rem;
+  }
+
+  .banner .left {
+    justify-content: center;
+  }
+}
+
+/* breakpoint where the two-column layout doesn't look good anymore. The
+banner text becomes too tall for the image next to it, the text in the
+little info boxes (like "Our guest lecture", etc) becomes too tall and
+narrow, and the large feature images look awkwardly small and lack impact. */
+@media only screen and (max-width: 664px) {
+
+  .desktop {
+    display: none;
+  }
+
+  /* reinstate original font sizes */
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  /* header */
+
+  nav {
+    display: none;
+  }
+
+  .business-id {
+    display: none;
+  }
+
+  header .mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .mobile img {
+    height: 2.5rem;
+    vertical-align: middle;
+  }
+
+  .mobile .logo {
+    height: 3rem;
+  }
+
+  /* banner */
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .left, .banner .right {
+    width: 100%; /* spec */
+    padding: 0;
+  }
+
+  .banner img {
+    width: 100%; /* spec */
+    border-radius: 0;
+  }
+
+  .banner .right h1, .banner .right h3 {
+    margin-top: 2rem; /* spec */
+  }
+
+  .button {
+    margin: 1.5rem 1rem 2rem 1rem; /* spec */
+  }
+
+  /* information */
+
+  .information .left {
+    display: none;
+  }
+
+  .information .right {
+    width: 100%;
+    padding-top: 1rem; /* spec */
+    padding-bottom: 0;
+  }
+
+  .info-box {
+    flex-direction: column;
+    padding-bottom: 3rem; /* spec - 4rem (64px) total space between info boxes */
+    padding-top: 1rem;
+  }
+
+  .info-box:last-child {
+    padding-bottom: 2rem;
+  }
+
+  .information .mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .details a {
+    margin-bottom: 0;
+  }
+
+  .details h3 {
+    padding: 2rem 1rem 0.5rem 1rem;
+    margin: 0;
+  }
+
+  /* courses */
+
+  .row-of-courses {
+    display: none;
+  }
+
+}
