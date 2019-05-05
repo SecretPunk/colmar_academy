@@ -1,7 +1,7 @@
 /* MEDIA QUERIES */
 
 /* breakpoint where the rounded info-box corners look strange against
-the edge of the browser window. This point is the container width (1200px) plus
+the edge of the browser window; this point is the container width (1200px) plus
 the left-side padding (24px) */
 @media only screen and (max-width: 1224px) {
 
@@ -35,7 +35,8 @@ the left-side padding (24px) */
 }
 
 /* breakpoint where navigation menu splits into a second line, and course
-boxes start looking too narrow */
+boxes start looking too narrow; response is to divide the course boxes into
+three rows, rather than two */
 @media only screen and (max-width: 884px) {
 
   .left {
@@ -80,7 +81,7 @@ boxes start looking too narrow */
 }
 
 /* breakpoint where banner text becomes too tall and narrow, and won't centre
-on the vertical axis. */
+on the vertical axis, against the large image */
 @media only screen and (max-width: 778px) {
 
   .banner .right h1, .banner .right h3 {
@@ -97,10 +98,10 @@ on the vertical axis. */
   }
 }
 
-/* breakpoint where the two-column layout doesn't look good anymore. The
+/* breakpoint where the two-column layout doesn't look good anymore; the
 banner text becomes too tall for the image next to it, the text in the
 little info boxes (like "Our guest lecture", etc) becomes too tall and
-narrow, and the large feature images look awkwardly small and lack impact. */
+narrow, and the large feature images look awkwardly small and lack impact */
 @media only screen and (max-width: 664px) {
 
   .desktop {

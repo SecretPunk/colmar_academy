@@ -1,5 +1,8 @@
 /* COLOUR PALETTE */
 
+/* Colour styles have been defined here, to minimise the number of repeated RGB
+values that need to be edited in style.css. */
+
 /* text */
 
 .light-text {

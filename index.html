@@ -1,3 +1,5 @@
+<!-- Codecademy Intensive Unit 8 - Capstone Project -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,7 +13,7 @@
     <link href="resources/css/media_queries.css" rel="stylesheet" type="text/css"/>
     <link href="resources/images/favicon.ico" type="image/x-icon" rel="icon"/>
     <script> </script> <!-- this fixes a Chrome bug that fires transitions upon page load -->
-    <title>Learn Something New Everyday</title>
+    <title>Learn Something New | Colmar Academy</title>
   </head>
 
   <body class="back-blue4 dark-text">
@@ -19,7 +21,7 @@
     <!-- header -->
     <header class="back-blue1 bottom-border">
       <div class="business-id">
-        <img src="resources/images/ic-logo.svg" alt="logo"/>
+        <img src="resources/images/ic-logo.svg" alt="colmar logo"/>
         <span class="dark-text">COLMAR</span><span class="yellow-text">ACADEMY</span>
       </div>
       <nav>
@@ -28,11 +30,12 @@
         <span><a class="light-text" href="#">For Companies</a></span>
         <span><a class="light-text" href="#">Sign In</a></span>
       </nav>
-      <div class="mobile">
-        <a href="#"><img class="logo" src="resources/images/ic-logo.svg" alt="logo"/></a>
-        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="on campus"/></a>
-        <a href="#"><img src="resources/images/ic-online.svg" alt="online"/></a>
-        <a href="#"><img src="resources/images/ic-login.svg" alt="login"/></a>
+      <!-- on small screens, replace navigation text items with icons -->
+      <div class="mobile" role="navigation">
+        <a href="#"><img class="logo" src="resources/images/ic-logo.svg" alt="colmar logo"/></a>
+        <a href="#" title="On Campus"><img src="resources/images/ic-on-campus.svg" alt="on campus"/></a>
+        <a href="#" title="Online"><img src="resources/images/ic-online.svg" alt="online"/></a>
+        <a href="#" title="Login"><img src="resources/images/ic-login.svg" alt="login"/></a>
       </div>
     </header>
 
@@ -189,7 +192,7 @@
       <div class="thesis-columns">
 
         <div class="column left">
-          <video width="100%" controls autoplay muted>
+          <video width="100%" controls autoplay muted aria-label="thesis video">
             <source src="resources/videos/thesis.mp4" type="video/mp4"/>
             This video is not supported.
           </video>
@@ -224,8 +227,8 @@
     <footer class="back-blue1 yellow-text top-border">
       <p>&copy 2016 Colmar Academy. All rights reserved.</p>
       <div class="footer-menu">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-lg"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-lg"></i></a>
+        <a href="https://www.facebook.com/" aria-label="facebook"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="https://twitter.com/" aria-label="twitter"><i class="fab fa-twitter-square fa-lg"></i></a>
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
       </div>
